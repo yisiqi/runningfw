@@ -12,7 +12,10 @@ sap.ui.model.json.JSONModel.extend("inspur.gsp.commons.RuntimeModel", {
   }
 
   , openFunc  : function(sComponentId, oCallbacks) {
-    debugger
+    // debugger
+      
+      // var currentComponent = this.container.byId(sComponentId);
+      // oCallbacks();   // 调用回调函数
   }
   
 })

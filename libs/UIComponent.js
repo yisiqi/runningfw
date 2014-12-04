@@ -78,7 +78,7 @@ sap.ui.core.UIComponent.extend('inspur.gsp.commons.UIComponent', {
 
 })
 
-inspur.gsp.commons.RuntimeComponent.getGSPMetaFor = function(oControllerOrView) {
+inspur.gsp.commons.UIComponent.getGSPMetaFor = function(oControllerOrView) {
 
 	var oView = oControllerOrView;
 	if (oView instanceof sap.ui.core.mvc.Controller) {

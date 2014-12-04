@@ -1,4 +1,4 @@
-jQuery.sap.require("sap.ui.core.mvc.View")
+jQuery.sap.require("inspur.gsp.commons.UIComponent")
 jQuery.sap.require("inspur.gsp.commons.RuntimeModel")
 jQuery.sap.declare("inspur.gsp.commons.RuntimeComponent")
 
