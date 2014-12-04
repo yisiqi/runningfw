@@ -1,4 +1,4 @@
-<OpenUI5:View controllerName="inspur.gsp.gspweb.Main"
+<OpenUI5:View controllerName="inspur.gsp.rt.gspweb.Main"
   height="100%" width="100%" xmlns="sap.ui.commons"
   xmlns:l="sap.ui.layout" xmlns:OpenUI5="sap.ui.core.mvc" 
   xmlns:f="sap.ui.layout.form" xmlns:t="sap.ui.table"  

@@ -1,5 +1,5 @@
 <OpenUI5:View 
-	controllerName="inspur.gsp.form.form"
+	controllerName="inspur.gsp.rt.form.form"
 	height="600px" 
 	width="600px" 
 	xmlns="sap.ui.commons"

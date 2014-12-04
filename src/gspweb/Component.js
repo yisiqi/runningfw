@@ -1,7 +1,8 @@
-jQuery.sap.declare('inspur.gsp.gspweb.Component') // 命名空间在创建向导中由用户填写。此处为必填项。
-jQuery.sap.require('sap.ui.core.UIComponent')
+jQuery.sap.declare('inspur.gsp.rt.gspweb.Component') // 命名空间在创建向导中由用户填写。此处为必填项。
+//jQuery.sap.require('sap.ui.core.UIComponent')
+jQuery.sap.require('inspur.gsp.commons.RuntimeComponent')
 
-sap.ui.core.UIComponent.extend('inspur.gsp.gspweb.Component', { // 命名空间与上面定义必须一致。
+inspur.gsp.commons.RuntimeComponent.extend('inspur.gsp.rt.gspweb.Component', { // 命名空间与上面定义必须一致。
 
 	metadata: {
 		"name": "Form Case",
@@ -11,7 +12,7 @@ sap.ui.core.UIComponent.extend('inspur.gsp.gspweb.Component', { // 命名空间�
 			"libs": ["sap.ui.core","sap.ui.commons","sap.ui.table","sap.ui.ux3"],
 			"components": []
 		},
-		"rootView": "inspur.gsp.gspweb.Main",
+		"rootView": "inspur.gsp.rt.gspweb.Main",
 		"config": {
 			"resourceBundle": ["i18n/messageBundle.properties"]
 		},
@@ -20,7 +21,7 @@ sap.ui.core.UIComponent.extend('inspur.gsp.gspweb.Component', { // 命名空间�
 
 	init: function() {
 
-		sap.ui.core.UIComponent.prototype.init.apply(this, arguments);
+		inspur.gsp.commons.RuntimeComponent.prototype.init.apply(this, arguments);
 
 		// var oModelHeaderItem = new sap.ui.model.json.JSONModel();	// Header的数据
 		// this.setModel(oModelHeaderItem, "oModelHeaderItem");
@@ -31,7 +32,7 @@ sap.ui.core.UIComponent.extend('inspur.gsp.gspweb.Component', { // 命名空间�
 		// var oModelForMenuTree = new sap.ui.model.json.JSONModel();	// 右边的显示树数据(蔬菜菜单，TreeNode数据)
 		// this.setModel(oModelForMenuTree, "oModelForMenuTree");
 
-		var rootPath = jQuery.sap.getModulePath("inspur.gsp.gspweb");
+		var rootPath = jQuery.sap.getModulePath("inspur.gsp.rt.gspweb");
 		var mConfig = this.getMetadata().getConfig();
 
 		var i18nModel = new sap.ui.model.resource.ResourceModel({

@@ -1,7 +1,7 @@
-jQuery.sap.declare('inspur.gsp.form.Component') // 命名空间在创建向导中由用户填写。此处为必填项。
+jQuery.sap.declare('inspur.gsp.rt.form.Component') // 命名空间在创建向导中由用户填写。此处为必填项。
 jQuery.sap.require('sap.ui.core.UIComponent')
 
-sap.ui.core.UIComponent.extend('inspur.gsp.form.Component', { // 命名空间与上面定义必须一致。
+sap.ui.core.UIComponent.extend('inspur.gsp.rt.form.Component', { // 命名空间与上面定义必须一致。
 
 	metadata: {
 		"name": "Form",
@@ -11,7 +11,7 @@ sap.ui.core.UIComponent.extend('inspur.gsp.form.Component', { // 命名空间与
 			"libs": ["sap.ui.core", "sap.ui.commons","sap.ui.table"],
 			"components": []
 		},
-		"rootView": "inspur.gsp.form.form",
+		"rootView": "inspur.gsp.rt.form.form",
 		"config": {
 			"resourceBundle": ["i18n/messageBundle.properties"]
 		},
@@ -25,7 +25,7 @@ sap.ui.core.UIComponent.extend('inspur.gsp.form.Component', { // 命名空间与
 		var oModel = new sap.ui.model.json.JSONModel();
 		this.setModel(oModel, "oModel");
 		
-		var rootPath = jQuery.sap.getModulePath("inspur.gsp.form");
+		var rootPath = jQuery.sap.getModulePath("inspur.gsp.rt.form");
 		var mConfig = this.getMetadata().getConfig();
 
 		var i18nModel = new sap.ui.model.resource.ResourceModel({

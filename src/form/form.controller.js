@@ -1,6 +1,6 @@
-jQuery.sap.declare("inspur.gsp.form.form")
+jQuery.sap.declare("inspur.gsp.rt.form.form")
 
-sap.ui.core.mvc.Controller.extend("inspur.gsp.form.form", {
+sap.ui.core.mvc.Controller.extend("inspur.gsp.rt.form.form", {
 
 	onBt1Click:function(e) {
 		var data = this.getView().getModel("oModel").getData();

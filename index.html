@@ -6,20 +6,21 @@
 		<!-- 编码字符集 -->
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<title>weggi's openui5 demo</title>
-		<script id="sap-ui-bootstrap" src="./ui5/sap-ui-core.js"
+		<script id="sap-ui-bootstrap" src="./ui5/sap-ui-core-dbg.js"
 			data-sap-ui-libs="sap.ui.core,sap.ui.commons,sap.ui.ux3" 
 			data-sap-ui-theme="sap_bluecrystal" 
 			data-sap-ui-xx-bindingSyntax="complex" 
 			data-sap-ui-resourceroots='{
-				 "inspur.gsp"	: "src/" 
+				 "inspur.gsp.rt"				: "src/"
+				 , "inspur.gsp.commons"	: "libs/"
 			}'>
 		</script>
 		<script>
-
+		var container = new sap.ui.core.ComponentContainer({
+					name: "inspur.gsp.rt.gspweb"
+				})
 		sap.ui.getCore().attachInit(function() {
-				new sap.ui.core.ComponentContainer({
-						name: "inspur.gsp.gspweb"
-				}).placeAt("myHelloWorld")
+				container.placeAt("myHelloWorld")
 		});
 		</script>
 </head>
